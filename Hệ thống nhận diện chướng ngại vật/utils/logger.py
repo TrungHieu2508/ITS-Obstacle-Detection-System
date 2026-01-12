@@ -32,7 +32,8 @@ class StructuredLogger:
         """Thiết lập hệ thống logging"""
         # Tạo logger
         self.logger = logging.getLogger('ObstacleDetection')
-        self.logger.setLevel(getattr(logging, self.config.LOG_LEVEL))
+        log_level = getattr(self.config, 'LOG_LEVEL', 'INFO')
+        self.logger.setLevel(getattr(logging, log_level))
         
         # Tạo thư mục logs nếu chưa có
         log_dir = "logs"
