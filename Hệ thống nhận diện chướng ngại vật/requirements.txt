@@ -1,3 +1,21 @@
-opencv-python>=4.8.0
-numpy>=1.23.0
-ultralytics>=8.0.0
+# Core dependencies
+opencv-python>=4.5.0
+numpy>=1.19.0
+
+# Performance monitoring
+psutil>=5.8.0
+GPUtil>=1.4.0
+
+# For Windows audio alerts (remove if not on Windows)
+winsound  # Built-in on Windows
+
+# Optional: For GPS simulation (if using real GPS)
+# pyserial>=3.5
+# gpsd-py3>=0.3.0
+
+# Optional: For CAN bus integration
+# python-can>=4.0.0
+
+# Development tools
+# matplotlib>=3.3.0  # For visualization
+# jupyter>=1.0.0     # For experimentation
